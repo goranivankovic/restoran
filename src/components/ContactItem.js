@@ -50,6 +50,8 @@ export default class ContactItem extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <br></br>
+                <br></br>
   
 
                 

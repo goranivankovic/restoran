@@ -25,7 +25,9 @@ export default class Uzglavlje  extends Component {
          
                 <div className="discoverDiv">
                     <br></br>
-              <Anime translateX={[1500,0]} duration={4500} delay={700}>    <Container className="border h-75"> 
+             
+                <Container className="border h-75"> 
+                  <Anime translateX={[1500,0]} duration={4500} delay={700}> 
                     <Row>
                         <Col className="col-12"><h3 className="text-center text-warning h3d">Discover </h3> </Col>
                         <br></br>
@@ -42,7 +44,9 @@ export default class Uzglavlje  extends Component {
 
 
                      </Row>
-                    </Container></Anime>
+                      </Anime>
+                    </Container>
+                   
                
                      
                      </div>

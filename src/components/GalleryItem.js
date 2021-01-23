@@ -12,9 +12,14 @@ export default class GalleryItem extends Component {
     }
     render() {
         return (
-            <div className="galerItemBackground">
-                <Container className="galeryMainDiv" fluid>
-                  <Row>
+            <div>
+             <Container>
+
+               <Row>
+
+            
+               
+                    <Col className="col-12">
             
                     
                        
@@ -22,9 +27,9 @@ export default class GalleryItem extends Component {
                         <Carousel>
   <Carousel.Item interval={1200}>
     <img
+      className="slike"
+     
       
-      height={"100%"}
-      width={"100%"}
       src={restoran}
       alt="First slide"
     />
@@ -35,9 +40,8 @@ export default class GalleryItem extends Component {
   </Carousel.Item>
   <Carousel.Item interval={1200}>
     <img
-    
-     height={"100%"}
-     width={"100%"}
+   className="slike"
+  
      src={restoran2}
      alt="Second slide"
     />
@@ -49,8 +53,8 @@ export default class GalleryItem extends Component {
   <Carousel.Item interval={1200}>
     <img
   
-     height={"100%"}
-     width={"100%"}
+  className="slike"
+
      src={restoran3}
      alt="Third slide"
      
@@ -63,8 +67,9 @@ export default class GalleryItem extends Component {
   <Carousel.Item interval={1200}>
     <img
    
-     height={"100%"}
-     width={"100%"}
+   className="slike"
+   width="200%"
+
      src={dinner}
      alt="Four slide"
      
@@ -79,12 +84,12 @@ export default class GalleryItem extends Component {
 
 
 </Carousel>
-                        
-</Row>  
-                  
-                </Container>
+</Col>
+</Row>
+             </Container>
+
                 <br></br>
-                <br></br>
+           
                 
             </div>
         )
