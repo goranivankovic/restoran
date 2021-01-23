@@ -14,7 +14,7 @@ export default class MenuItem extends Component {
     }
     changeScale095(e){
        e.target.style.transition='1200ms'
-        e.target.style.transform='scale(0.95)'
+        e.target.style.transform='scale(0.90)'
        
     }
 

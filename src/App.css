@@ -99,11 +99,7 @@
   height: 90vh;
 
 }
-.galerItemBackground{
-  height: 100%;
-  width: 100%;
-  background-color: firebrick;
-}
+
 
 .galeryMainDiv{
   height: 100%;
@@ -160,24 +156,13 @@
   }
 
 
-  .galerItemBackground{
-    height: 100vh;
-  padding-top: 15%;
-
-  }
-
 
 }
 @media only screen and (max-width: 600px){
   .menuMainDiv{
     height: 150vh;
   }
-  .galerItemBackground{
-    height: 100vh;
-    padding-top: 20%;
-
-
-  }
+ 
   .h3d{
   font-size: 1.2em;
   }
@@ -194,10 +179,9 @@
     height: 140vh;
   }
   .galerItemBackground{
-    height: 80vh;
-    padding-top: 20%;
-
+    height: 100%;
   }
+
   .discoverDiv{
 
     position: absolute;

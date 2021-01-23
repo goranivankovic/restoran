@@ -13,16 +13,17 @@ export default class GalleryItem extends Component {
     render() {
         return (
             <div className="galerItemBackground">
-                <Container className="galeryMainDiv">
-                    <Row>
-                        <Col className="col-md-12 col-12">
-                            <br></br>
+                <Container className="galeryMainDiv" fluid>
+                  <Row>
+            
+                    
+                       
                             
                         <Carousel>
   <Carousel.Item interval={1200}>
     <img
       
-      height={"190%"}
+      height={"100%"}
       width={"100%"}
       src={restoran}
       alt="First slide"
@@ -79,9 +80,8 @@ export default class GalleryItem extends Component {
 
 </Carousel>
                         
-                        
-                        </Col>
-                    </Row>
+</Row>  
+                  
                 </Container>
                 <br></br>
                 <br></br>
