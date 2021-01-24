@@ -42,12 +42,14 @@ export default class NavBarAlllItmes extends Component {
               navic768Lower.style.zIndex='3000'
               navic768Lower.style.display='flex'
 
+              navItemsClassLower768.style.display='flex';
               navItemsClassLower768.style.flexDirection="column"
               navItemsClassLower768.style.height='100%'
               navItemsClassLower768.style.width='100%'
               navItemsClassLower768.style.alignItems='center';
               navItemsClassLower768.style.justifyContent='space-around';
               navItemsClassLower768.style.fontFamily='Indie Flower, cursive';
+             
             
                
                 
