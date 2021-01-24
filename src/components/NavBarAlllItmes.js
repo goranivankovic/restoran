@@ -79,15 +79,15 @@ export default class NavBarAlllItmes extends Component {
          
 
           backgorundColorLower768(e){
-            e.target.style.width='100%'
-              e.target.style.backgroundColor='grey';
-              e.target.style.padding="7px"
+            // e.target.style.width='100%'
+            //   e.target.style.backgroundColor='grey';
+            //   e.target.style.padding="7px"
 
           }
           backgorundColorLower768DefoultColor(e){
-            e.target.style.width='100%'
-            e.target.style.backgroundColor='teal';
-            e.target.style.padding="0px"
+            // e.target.style.width='100%'
+            // e.target.style.backgroundColor='teal';
+            // e.target.style.padding="0px"
 
 
 
@@ -130,11 +130,11 @@ export default class NavBarAlllItmes extends Component {
                           </div>
                           <div className="navic768Lower">
                           <Nav className="navItemsClassLower768">
-                                                 <Nav.Link href="#uz" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Home</Nav.Link>
-                                                 <Nav.Link href ="#ab"className="text-light text-center h5 " onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>About</Nav.Link>
-                                                 <Nav.Link href ="#mu" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Menu</Nav.Link>
-                                                 <Nav.Link href ="#ga" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Galery</Nav.Link>
-                                                 <Nav.Link href ="#con" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Contact</Nav.Link>
+                                                 <Nav.Link href="#uz" className="text-light text-center h5" onClick={this.getabaout}>Home</Nav.Link>
+                                                 <Nav.Link href ="#ab"className="text-light text-center h5 "onClick={this.getabaout} >About</Nav.Link>
+                                                 <Nav.Link href ="#mu" className="text-light text-center h5"  onClick={this.getabaout}>Menu</Nav.Link>
+                                                 <Nav.Link href ="#ga" className="text-light text-center h5"  onClick={this.getabaout}>Galery</Nav.Link>
+                                                 <Nav.Link href ="#con" className="text-light text-center h5" onClick={this.getabaout} >Contact</Nav.Link>
                             
                                                 </Nav>
 
