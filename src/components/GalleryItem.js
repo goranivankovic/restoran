@@ -13,7 +13,7 @@ export default class GalleryItem extends Component {
     render() {
         return (
             <div>
-             <Container>
+             <Container id="ga">
 
                <Row>
 
@@ -25,7 +25,7 @@ export default class GalleryItem extends Component {
                        
                             
                         <Carousel>
-  <Carousel.Item>
+  <Carousel.Item id="ga">
     <img
       className="slike"
      
@@ -38,7 +38,7 @@ export default class GalleryItem extends Component {
      
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item >
+  <Carousel.Item id="ga">
     <img
    className="slike"
   
@@ -64,7 +64,7 @@ export default class GalleryItem extends Component {
      
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item id="ga"> 
     <img
    
    className="slike"
