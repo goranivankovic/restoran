@@ -37,7 +37,7 @@ export default class ContactItem extends Component {
  
   </Form.Group>
 
-  <Form.Group controlId="formBasicPassword">
+  <Form.Group controlId="formBasicPassword" id="con">
     <Form.Label>Email</Form.Label>
     <Form.Control type="email" placeholder="Enter email" />
   </Form.Group>

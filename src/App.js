@@ -1,25 +1,28 @@
 import React from 'react';
 import './App.css';
-import Uzglavlje from './components/Uzglavlje.js'
+import {BrowserRouter,Switch,Route} from 'react-router-dom'
+import AllItems from './components/AllItems';
 import AboutItem from './components/AboutItem.js'
-import NavBarAlllItmes from './components/NavBarAlllItmes.js'
-import MenuItem from './components/MenuItem.js'
-import GalleryItem from './components/GalleryItem.js'
-import ContactItem from './components/ContactItem';
+
 
 
 function App() {
   return (
+    <BrowserRouter>
+ 
     <div className="App">
-      <Uzglavlje />
-      <NavBarAlllItmes />
-      <AboutItem />
-      <MenuItem />
-      <GalleryItem />
-      <ContactItem />
+      <Switch>
+        <Route exact path ="/" component={AllItems} />
+    
+        <Route exact path ="*" component={()=>{
+          return <h4>404 Not Found</h4>
+        }} />
+
+ 
      
-     
+     </Switch>
     </div>
+       </BrowserRouter>
   );
 }
 

@@ -25,7 +25,7 @@ export default class GalleryItem extends Component {
                        
                             
                         <Carousel>
-  <Carousel.Item interval={1200}>
+  <Carousel.Item>
     <img
       className="slike"
      
@@ -38,7 +38,7 @@ export default class GalleryItem extends Component {
      
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={1200}>
+  <Carousel.Item >
     <img
    className="slike"
   
@@ -50,7 +50,7 @@ export default class GalleryItem extends Component {
      
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={1200}>
+  <Carousel.Item  id="ga">
     <img
   
   className="slike"
@@ -64,7 +64,7 @@ export default class GalleryItem extends Component {
      
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={1200}>
+  <Carousel.Item>
     <img
    
    className="slike"

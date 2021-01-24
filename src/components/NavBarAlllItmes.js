@@ -1,108 +1,181 @@
 import React, { Component } from 'react'
 import { Container,Row,Col,Navbar,Nav,NavDropdown } from 'react-bootstrap';
 import {FaBars, FaHeart,FaHome} from 'react-icons/fa';
+import brunch from '../img/brunch.jpg'
 import Media from "react-media"
+import Uzglavlje from './Uzglavlje.js'
+import AboutItem from './AboutItem.js'
+import MenuItem from './MenuItem.js'
+import GalleryItem from './GalleryItem.js'
+import ContactItem from './ContactItem';
+import { Link}  from 'react-router-dom'
+
 export default class NavBarAlllItmes extends Component {
     constructor(){
         super()
        
         this.changeWhNavBar=this.changeWhNavBar.bind(this)
+        this.backgorundColorLower768=this.backgorundColorLower768.bind(this)
+        this.backgorundColorLower768DefoultColor=this.backgorundColorLower768DefoultColor.bind(this)
+        this.getabaout=this.getabaout.bind(this)
+      
         this.state={
-            laz:false
+            laz:false,
+           
         }
+      
     }
 
 
+  
           changeWhNavBar(){
-        //     const  navHwlower768 =document.querySelector('.navHwlower768')
-        //     const royalFood2 = document.querySelector('.royalFood2')
-        //     const  navic2 =document.querySelector('.navic2')
-        //     const bars=document.querySelector('.bars')
-
-        //     if(this.state.laz==false){
-        //   bars.style.position='fixed'
-        //   bars.style.top='0%';
-        //   bars.style.right='20%'
-        //   royalFood2.style.display="none"
-        //   navic2.style.height='50%';
-        //   navic2.style.width='100%'
-        //   navic2.style.position='fixed';
-        //   navic2.style.top='0%'
-        //   navic2.style.left='0%'
-        //   navic2.style.backgroundColor="grey"
-        //   navHwlower768.style.display='flex';
-        //   navHwlower768.style.width='100%'
-        //   navHwlower768.style.height='100%'
-        //   navHwlower768.style.flexDirection="column"
-        //   navHwlower768.style.justifyContent='space-around';
-        //   navHwlower768.style.alignItems='center';
-
-        //     this.setState({
-        //         laz:true
-        //     })
+              let navic768Lower= document.querySelector('.navic768Lower')
+              let navItemsClassLower768 =document.querySelector('.navItemsClassLower768')
           
-        //     }else if(this.state.laz==true){
-        //       royalFood2.style.display="block"
-        //         navHwlower768.style.display='none';
-        //         navic2.style.position='fixed';
-        //         navic2.style.height='10%';
-        //         navic2.style.width='100%'
-        //         navic2.style.backgroundColor="transparent"
-        //         navHwlower768.style.display='flex';
-        //         navHwlower768.style.width='70%'
-        //         navHwlower768.style.height='10%'
-        //         navHwlower768.style.justifyContent='space-around';
-        //         navHwlower768.style.alignItems='center';
-               
            
+            if(!this.state.laz){
+                
+              navic768Lower.style.position='fixed';
+              navic768Lower.style.top='0%'
+              navic768Lower.style.width='100%'
+              navic768Lower.style.height='50%'
+              navic768Lower.style.zIndex='3000'
+              navic768Lower.style.display='flex'
+
+              navItemsClassLower768.style.flexDirection="column"
+              navItemsClassLower768.style.height='100%'
+              navItemsClassLower768.style.width='100%'
+              navItemsClassLower768.style.alignItems='center';
+              navItemsClassLower768.style.justifyContent='space-around';
+              navItemsClassLower768.style.fontFamily='Indie Flower, cursive';
             
+               
+                
+ 
 
-        //  this.setState({
-        //      laz:false
-        //  })
+             this.setState({
+                 laz:true
+             })
+ 
+            
+             }else if(this.state.laz){
+                 
+                navic768Lower.style.display='none'
+                 
 
-
-            // }
-         
-
-          
-
+              
+      
+               this.setState({
+                  laz:false
+                      })
+             }
+           
+           
           }
 
+ 
+         
 
+          backgorundColorLower768(e){
+            e.target.style.width='100%'
+              e.target.style.backgroundColor='grey';
+              e.target.style.padding="7px"
+
+          }
+          backgorundColorLower768DefoultColor(e){
+            e.target.style.width='100%'
+            e.target.style.backgroundColor='teal';
+            e.target.style.padding="0px"
+
+
+
+          }
+          getabaout(){
+            let navic768Lower= document.querySelector('.navic768Lower')
+            navic768Lower.style.display='none'
+
+          
+            
+            
+
+          }
+          
+        
 
 
     render() {
-
-   
-
+      
+      
+       
         return (
           
-            <div className="navic">
+            <div>
            
 
 
+                
+
+                                     <Media query={{ maxWidth: 768 }}>
+                    {matches =>
+                      matches ? (
+                          <div>
+
+
+
+                          <div className="bars">
+                              <FaBars  onClick={this.changeWhNavBar}/>
+
+                          </div>
+                          <div className="navic768Lower">
+                          <Nav className="navItemsClassLower768">
+                                                 <Nav.Link href="#uz" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Home</Nav.Link>
+                                                 <Nav.Link href ="#ab"className="text-light text-center h5 " onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>About</Nav.Link>
+                                                 <Nav.Link href ="#mu" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Menu</Nav.Link>
+                                                 <Nav.Link href ="#ga" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Galery</Nav.Link>
+                                                 <Nav.Link href ="#con" className="text-light text-center h5" onMouseOver={this.backgorundColorLower768} onMouseOut={this.backgorundColorLower768DefoultColor} onClick={this.getabaout}>Contact</Nav.Link>
+                            
+                                                </Nav>
+
+
+</div>
+                     
+
+</div>
+
+
+
+                        ) : (
+
                                      
-                 <div className="navic">
-                   <div className="royalFood"><h3 className="text-primary h3d navIme">Royal Food</h3> </div>
-                                 
-                                       <Nav className="navItemsClass">
-                                           <Nav.Item className="text-light h5">Home</Nav.Item>
-                                           <Nav.Item className="text-light h5">About</Nav.Item>
-                                           <Nav.Item className="text-light h5">Menu</Nav.Item>
-                                           <Nav.Item className="text-light h5">Galery</Nav.Item>
-                                           <Nav.Item className="text-light h5">Contact</Nav.Item>
-                   
-                                       </Nav>
-                           
-                         
+                            <div className="navic">
+                            <div className="royalFood"><h3 className="text-primary h3d navIme">Royal Food</h3> </div>
+                                          
+                                                <Nav className="navItemsClass">
+                                                    <Nav.Link href="#uz" className="text-light h5">Home</Nav.Link>
+                                                    <Nav.Link href ="#ab" className="text-light h5">About</Nav.Link>
+                                                    <Nav.Link href ="#mu" className="text-light h5">Menu</Nav.Link>
+                                                    <Nav.Link href ="#ga" className="text-light h5">Galery</Nav.Link>
+                                                    <Nav.Link href ="#con" className="text-light h5">Contact</Nav.Link>
+                            
+                                                </Nav>
+                                    
+                                  
+         
+         
+                                              </div>   
 
 
-                                     </div>   
+
+                        
+                       )
+                     }
+                   </Media>
                       
                 
 
             </div>
+
+
            
         )
     }

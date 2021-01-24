@@ -3,6 +3,7 @@ import { Container,Row,Col,Navbar,Nav,Media} from 'react-bootstrap';
 import breakfast from '../img/breakfast.jpg'
 import brunch from '../img/brunch.jpg'
 import dinner from '../img/dinner.jpg'
+import zacini from '../img/zacini.jpg'
 
 export default class MenuItem extends Component {
     constructor(){
@@ -50,14 +51,14 @@ export default class MenuItem extends Component {
                             <img width={'50%'} height={'45%'} src={breakfast} onMouseOver={this.changeScale095} onMouseOut={this.changeScale100} />
                             <img width={'50%'} height={'45%'} src={dinner} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
                             <img width={'50%'} height={'45%'} src={brunch} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100} />
-                            <img width={'50%'} height={'45%'} src={dinner} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
+                            <img width={'50%'} height={'45%'} src={zacini} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
                            
 
                         </Col>
                        
                         
 
-                        <Col className="col-md-6 col-12 m">
+                        <Col className="col-md-6 col-12 m" id="mu">
                             
                             <h3 className="text-center text-primary h3d">SPECIAL OFFERS</h3>
     <Media className="border h-25" onMouseOver={this.changeBackground} >
@@ -79,7 +80,7 @@ export default class MenuItem extends Component {
 
 </Media>
 <br></br>
-<Media className="border h-25" onMouseOver={this.changeBackground} >
+<Media className="border h-25" onMouseOver={this.changeBackground}  >
   <img
     width={80}
     height={80}
@@ -96,7 +97,7 @@ export default class MenuItem extends Component {
   </Media.Body>
 </Media>
 <br></br>
-<Media className="border h-25" onMouseOver={this.changeBackground} >
+<Media className="border h-25" onMouseOver={this.changeBackground}>
   <img
     width={80}
     height={80}
