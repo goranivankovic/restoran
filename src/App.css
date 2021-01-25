@@ -177,7 +177,8 @@
  }
 
   .menuMainDiv{
-    height: 165vh;
+    height: 210vh;
+    /* margin-bottom: 300px; */
   }
 
 
@@ -185,7 +186,7 @@
 }
 @media only screen and (max-width: 600px){
   .menuMainDiv{
-    height: 150vh;
+    height: 180vh;
   }
  
   .h3d{
@@ -201,7 +202,7 @@
 
 @media only screen and (max-width: 500px){
   .menuMainDiv{
-    height: 140vh;
+    height: 170vh;
   }
 
 
@@ -230,6 +231,13 @@
 
   }
 
+
+}
+
+@media only screen and (max-width:400px){
+  .menuMainDiv{
+    height: 150vh;
+  }
 
 }
 

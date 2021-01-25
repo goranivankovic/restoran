@@ -48,10 +48,10 @@ export default class MenuItem extends Component {
                             <br></br>
                             
 
-                            <img width={'50%'} height={'45%'} src={breakfast} onMouseOver={this.changeScale095} onMouseOut={this.changeScale100} />
-                            <img width={'50%'} height={'45%'} src={dinner} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
-                            <img width={'50%'} height={'45%'} src={brunch} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100} />
-                            <img width={'50%'} height={'45%'} src={zacini} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
+                            <img width={'50%'} height={'40%'} src={breakfast} onMouseOver={this.changeScale095} onMouseOut={this.changeScale100} />
+                            <img width={'50%'} height={'40%'} src={dinner} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
+                            <img width={'50%'} height={'40%'} src={brunch} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100} />
+                            <img width={'50%'} height={'40%'} src={zacini} onMouseOver={this.changeScale095}  onMouseOut={this.changeScale100}/>
                            
 
                         </Col>

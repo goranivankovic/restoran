@@ -19,7 +19,7 @@ export default class GalleryItem extends Component {
 
             
                
-                    <Col className="col-12">
+                    <Col className="col-md-12 col-12">
             
                     
                        
@@ -68,7 +68,7 @@ export default class GalleryItem extends Component {
     <img
    
    className="slike"
-   width="200%"
+   
 
      src={dinner}
      alt="Four slide"
