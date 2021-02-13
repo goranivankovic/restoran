@@ -45,7 +45,7 @@ export default class MenuItem extends Component {
                  
                     <Row>
                         <Col className="col-md-6 col-12 menu4images">
-                            <br></br>
+                        
                             
 
                             <img width={'50%'} height={'40%'} src={breakfast} onMouseOver={this.changeScale095} onMouseOut={this.changeScale100} />

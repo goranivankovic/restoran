@@ -19,8 +19,11 @@ export default class NavBarAlllItmes extends Component {
         this.backgorundColorLower768DefoultColor=this.backgorundColorLower768DefoultColor.bind(this)
         this.getabaout=this.getabaout.bind(this)
       
+    
+
         this.state={
             laz:false,
+         
            
         }
       
@@ -101,11 +104,13 @@ export default class NavBarAlllItmes extends Component {
             
 
           }
-          
+
         
 
 
     render() {
+
+
       
       
        
@@ -149,7 +154,7 @@ export default class NavBarAlllItmes extends Component {
                         ) : (
 
                                      
-                            <div className="navic">
+                            <div className='navic' >
                             <div className="royalFood"><h3 className="text-primary h3d navIme">Royal Food</h3> </div>
                                           
                                                 <Nav className="navItemsClass">
